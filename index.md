@@ -47,9 +47,39 @@ def __str__(self):
   return tmp
 ```
 #### Properties
+Properties act as functions to manage attributes. For example, properties can ensure attribute definition is proper or format attribute data.
+
+The nomenclature for properties can be confusing at first glance. Conversationally, properties can be thought of as "getters" or "setters." Getters retrieve attributes when commanded. Setters assign values for attributes when commanded. The example below outlines the basic syntax for getters and setters.
+
+```python
+@property # Getter
+def product_price(self):
+  return self._product_price
+  
+@product_price.setter # Setter
+def product_price(self,price):
+  try:
+    self._product_price = float(price)
+  except ValueError:
+    print("D'oh! Price must be a number. Try again.")
+```
+As mentioned, the syntax is critical, and the variable name should be consistent with the attribute from earlier. The getter retrieves the object's (self) attribute value. The setter assigns a value to the attribute and handles errors in the process. Though tedious, it is a best practice to write a getter and setter property for each attribute within a class.
+
 #### Methods
+Methods are more or less functions within a class that do not manage attributes. Consider another class example to illustrate a simple method.
+
+```python
+class FileProcessor:
+  # Save data to a pickled file
+  @staticmethod
+  def save_data_to_file(file_name, list_of_product_objects):
+    with open(file_name, 'wb'):
+      pickle.dump(list_of_product_objects, file)
+    print("File successfully pickled to " + file_name)
+```
 
 ### GitHub Desktop
+GitHub Desktop offers another avenue for managing files and committing changes on GitHub in addition to the web browser.
 
 ## Code
 [Link to Python script](https://github.com/rblake50/IntroToProg-Python-Mod08/blob/main/Assigment08-Starter.py)
