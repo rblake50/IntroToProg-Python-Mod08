@@ -26,6 +26,13 @@ Following this outline takes a linear approach to object initiation that can be 
 
 ### Object Fundamentals
 #### Fields
+Fields comprise the data for an object within a class. These can be thought of as characteristics that would apply to any object. For example, a Product might be describe by a product name and a product price. Thus, `product_name` and `product_price` could be suitable fields for an object called `Product`.
+```python
+class Product:
+  product_name = ""
+  product_price = 0.0
+```
+These fields act as placeholders for values that can be initiated and changed through constructors and properties as mentioned in the next sections.
 #### Constructors
 Constructors are built-in methods to Python that help define an object when it is initiated. Two useful constructor methods are `__init__(self)` and `__str(self)__`. Respectively, these methods define what happens right when an object is initialized and what happens when an object is printed as text. Note that all constructors must be written within a class.
 
