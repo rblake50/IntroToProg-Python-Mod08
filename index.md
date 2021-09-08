@@ -109,6 +109,7 @@ The pseudocode provided is:
     # Let user add data to the list of product objects
     # let user save current data to file and exit program
 ```
+This code exploits classes to achieve the end result. Specifically, the code uses `class Product` to define the product object, `class FileProcessor` to handle all file read and write methods, and `class IO` to interact with the user. The code also builds on learnings from previous modules such as error handling, pickling, and while loop menus.
 
 ## Code
 [Link to Python script](https://github.com/rblake50/IntroToProg-Python-Mod08/blob/main/Assigment08-Starter.py)
