@@ -86,7 +86,14 @@ class FileProcessor:
 ```
 
 ### GitHub Desktop
-GitHub Desktop offers another avenue for managing files and committing changes on GitHub in addition to the web browser.
+GitHub Desktop offers another avenue for managing files and committing changes on GitHub in addition to the web browser. GitHub Desktop can be installed from the [GitHub website](https://desktop.github.com/).
+
+Some of the key benefits of GitHub Desktop include:
+- File management using Windows explorer
+- Clean user interface
+- Collaboration
+
+Though not explored in this module, the multi-user collaboration tools offer a way for multiple developers to work on the same files with clear change history.
 
 ## Code
 [Link to Python script](https://github.com/rblake50/IntroToProg-Python-Mod08/blob/main/Assigment08-Starter.py)
