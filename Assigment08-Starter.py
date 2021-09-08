@@ -56,7 +56,7 @@ class Product:
     # Properties
     @property # Getter
     def product_name(self):
-        return self.product_name
+        return self._product_name
 
     @product_name.setter
     def product_name(self,name):
@@ -64,7 +64,7 @@ class Product:
 
     @property # Getter
     def product_price(self):
-        return self.product_price
+        return self._product_price
 
     @product_price.setter
     def product_price(self,price):
@@ -267,7 +267,8 @@ while True:
 
             # Save data to pickled file but *NOT* to text file
             FileProcessor.save_data_to_file(strFileName, lstOfProductObjects)
-            print("File *NOT* written to text file. Good-bye!")
+            print("File *NOT* written to text file.")
+            input("Good-bye!")
             break
 
         # Invalid entry
