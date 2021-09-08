@@ -95,5 +95,20 @@ Some of the key benefits of GitHub Desktop include:
 
 Though not explored in this module, the multi-user collaboration tools offer a way for multiple developers to work on the same files with clear change history.
 
+## Assignment Description
+This program allows a user to read list data from a pickled file and read or add data to the list. Then, the user can exit the program and save the data back to the pickled file. The data being stored is Product information containing the name and price of the Product. The Product is managed as a Python object through class properties.
+
+The pseudocode provided is:
+```python
+# Main Body of Script  ---------------------------------------------------- #
+# TODO: Add Data Code to the Main body
+# Load data from file into a list of product objects when script starts
+# Show user a menu of options
+# Get user's menu option choice
+    # Show user current data in the list of product objects
+    # Let user add data to the list of product objects
+    # let user save current data to file and exit program
+```
+
 ## Code
 [Link to Python script](https://github.com/rblake50/IntroToProg-Python-Mod08/blob/main/Assigment08-Starter.py)
